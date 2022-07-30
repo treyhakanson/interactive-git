@@ -13,7 +13,7 @@
     "clean": "rm -rf build",
     "build": "tsc && chmod +x build/index.js",
     "start": "tsc -w",
-    "gi": "build/index.js"
+    "gi": "node --enable-source-maps build/index.js"
   },
   "bin": {
     "gi": "build/index.js",
