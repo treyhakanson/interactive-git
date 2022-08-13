@@ -11,7 +11,6 @@ export async function getBranchChoices(): Promise<prompts.Choice[]> {
     .map((branch) => branch.trim())
     .filter((branch) => branch.length !== 0)
     .map((branch) => {
-      console.log(branch);
       const [, flag, name, description] = branch.match(
         /^(\*)?\s*([^\s]+)\s+(.+)$/
       )!;
